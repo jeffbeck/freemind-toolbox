@@ -1,0 +1,15 @@
+searching freemind files:
+  - find .mm (and mm.html) files
+  - make searchdirs configureable
+    (config file, command line switch)
+
+detect links in .mm files
+  - detect file links
+    - check if they point to en axisting location
+      ( if not, search for the file (optionally)) 
+  - detect internet links
+    - check them
+
+pack and go
+  - create a zip file (or similar)
+  - pack the mm file and all files that are linked
