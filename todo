@@ -1,5 +1,6 @@
 searching freemind files:
-  - find .mm (and mm.html) files
+  - find all *.mm (and mm.html) files in a subtree
+  - use one *.mm given as option
   - make searchdirs configureable
     (config file, command line switch)
 
@@ -9,6 +10,19 @@ detect links in .mm files
       ( if not, search for the file (optionally)) 
   - detect internet links
     - check them
+
+detect Strings in -mm files
+  - detect knots named as "Stunde 1"", "Stunde 2", ... and list them
+    - do something with the subknots of this knot
+      - list them
+      <Filename>: 
+        Stunde 1: Subknot1
+                  Subknot2
+        ...
+      - cteate a tex file (Stoffverteilungsplan)
+ - detect knots beginning with "???"
+   - list them as Question lists
+              
 
 pack and go
   - create a zip file (or similar)
