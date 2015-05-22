@@ -1,9 +1,27 @@
+##################################################
+Searching
+############################################################
 searching freemind files:
   - find all *.mm (and mm.html) files in a subtree
   - use one *.mm given as option
   - make searchdirs configureable
     (config file, command line switch)
+  - follow links (optionally do not follow links)
+  - warn if deadlinks are encountered in the searchpath
 
+decrypting
+  - decrypt multiple files (with the same password) with 
+    only once typing the password
+  OR
+  - make sure (or warn, ask, ...) if an encrypted container 
+    should be searched and is not yet decrypted
+
+
+
+
+#########################################################60#
+Links
+############################################################
 detect links in .mm files
   - detect file links
     - check if they point to en axisting location
@@ -11,7 +29,12 @@ detect links in .mm files
   - detect internet links
     - check them
 
-detect Strings in -mm files
+#########################################################60#
+Strings
+############################################################
+------------------------------------------------------------
+Stunde <num>,  Lesson <nun>
+------------------------------------------------------------
   - detect knots named as "Stunde 1"", "Stunde 2", ... and list them
     - do something with the subknots of this knot
       - list them
@@ -20,9 +43,22 @@ detect Strings in -mm files
                   Subknot2
         ...
       - cteate a tex file (Stoffverteilungsplan)
- - detect knots beginning with "???"
+
+------------------------------------------------------------
+???
+------------------------------------------------------------
+detect knots beginning with "???"
    - list them as Question lists
-              
+
+------------------------------------------------------------
+ACCOUNT, URL, LOGIN, PASS (KEY)
+------------------------------------------------------------
+Detect knots named ACCOUNT with subknots URL, LOGIN, PWD 
+   - if not all are present:
+     - give warning
+   - if all are present
+     - create password safe or importlist for xkeepass, ...
+     - create printable password list (pdf) for paper storage
 
 pack and go
   - create a zip file (or similar)
